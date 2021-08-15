@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollview_daily_special"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:clickable="false"
+    android:fillViewport="false">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_daily_special"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="10dp"
+        android:paddingTop="1dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="5dp">
+
+        <fragment
+            android:id="@+id/show_info_box"
+            android:name="com.example.wineaprilianisa.UseInfoBoxFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:layout="@layout/show_info" />
+
+        <Button
+            android:id="@+id/order_online"
+            style="@style/button_solid"
+            android:onClick="orderOnline"
+            android:text="Order online" />
+
+
+    </LinearLayout>
+
+</ScrollView>
